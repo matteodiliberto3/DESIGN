@@ -1,11 +1,9 @@
 // 1. Importa il file CSS con Tailwind
 import './index.css';
 
-// 2. Importa i tuoi componenti con i loro nomi esatti
+// 2. Importa SOLO i componenti realmente esistenti con il nome esatto
 import FloatinPill from './components/FloatinPill';
-import AccordionDynamicLayoutShared from './components/AccordionDynamicLayoutShared';
 import LiquidProgressBass from './components/LiquidProgressBass';
-import ScrollDrivenMotionStickyVersion from './components/ScrollDrivenMotionStickyVersion';
 
 export default function App() {
     return (
@@ -21,22 +19,10 @@ export default function App() {
                 <FloatinPill />
             </section>
 
-            {/* Sezione 2: L'Accordion */}
+            {/* Sezione 2: La barra di progresso */}
             <section className="w-full max-w-2xl">
-                <h2 className="text-xs font-mono text-zinc-500 mb-4 text-center">02 / DYNAMIC ACCORDION</h2>
-                <AccordionDynamicLayoutShared />
-            </section>
-
-            {/* Sezione 3: La barra di progresso */}
-            <section className="w-full max-w-2xl">
-                <h2 className="text-xs font-mono text-zinc-500 mb-4 text-center">03 / LIQUID PROGRESS BARS</h2>
+                <h2 className="text-xs font-mono text-zinc-500 mb-4 text-center">02 / LIQUID PROGRESS BARS</h2>
                 <LiquidProgressBass />
-            </section>
-
-            {/* Sezione 4: Lo sticky morphing */}
-            <section className="w-full max-w-4xl pb-24">
-                <h2 className="text-xs font-mono text-zinc-500 mb-4 text-center">04 / SCROLL DRIVEN STICKY</h2>
-                <ScrollDrivenMotionStickyVersion />
             </section>
         </div>
     );
