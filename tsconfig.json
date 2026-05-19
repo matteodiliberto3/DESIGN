@@ -25,6 +25,8 @@
     },
     "include": [
         "./*.ts",
-        "./*.tsx"
+        "./*.tsx",
+        "./components/**/*.tsx",
+        "./lab/**/*.tsx"
     ]
 }

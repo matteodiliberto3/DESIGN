@@ -1,10 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
     content: [
-        "./*.{js,ts,jsx,tsx}", // <--- Questo dice a Tailwind di scansionare tutti i file .tsx nella root
+        './index.html',
+        './**/*.{js,ts,jsx,tsx}',
+        './lab/**/*.{js,ts,jsx,tsx}',
+        './components/**/*.{js,ts,jsx,tsx}',
     ],
-    theme: {
-        extend: {},
-    },
-    plugins: [],
-}
+};
